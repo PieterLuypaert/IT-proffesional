@@ -1,0 +1,291 @@
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio van Pieter Luypaert - Frontend Developer">
+    <title>Portfolio | Pieter Luypaert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/main.css">
+    <link rel="stylesheet" href="/src/styles/base/base.css">
+
+</head>
+
+<body>
+    <a class="skip-to-content-link" href="#timeline">
+        Skip to content
+    </a>
+    <div class="background-lines">
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <a href="/" class="nav__logo">PL</a>
+                <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                    <span class="nav__toggle-icon"></span>
+                </button>
+                <ul id="menu" class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link nav__link--active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/contact.html" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/projects.html" class="nav__link">Projects</a>
+                    </li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="about__media">
+                    <div class="about__image-wrapper">
+                        <img src="/src/images/pictureprofile.webp" alt="Profile picture of Pieter Luypaert"
+                            class="about__image" width="350" height="450">
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <h1 class="about__title">About Me</h1>
+                    <p class="about__subtitle">Frontend Developer</p>
+
+                    <p class="about__bio">
+                        Hey! Ik ben Pieter, 19 jaar en student Graduaat Programmeren aan de Arteveldehogeschool. Ik ben
+                        leergierig, gedreven en altijd op zoek naar manieren om mijn skills te verbeteren. Of het nu
+                        gaat om front-end of back-end development, ik werk graag aan projecten waar ik creativiteit kan
+                        combineren met logica. Mijn doel? Praktische en gebruiksvriendelijke toepassingen bouwen die
+                        echt een verschil maken.
+                    </p>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="https://github.com/PieterLuypaert" class="social__link" target="_blank"
+                                rel="noopener" aria-label="Github Profile">
+                                <img src="./src/icons/github.svg" alt="" class="social__icon" width="24" height="24">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/in/pieter-luypaert-85aba3357/" class="social__link"
+                                target="_blank" rel="noopener" aria-label="Linkedin Profile">
+                                <img src="./src/icons/linkedin.svg" alt="" class="social__icon" width="24" height="24">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2 class="skills__title">Technical Skills</h2>
+                <div class="skills__grid">
+                    <div class="skill__card">
+                        <h3 class="skill__card__title">Frontend Development</h3>
+                        <button popovertarget="frontendPopover" class="skill__card__button">Learn more</button>
+                        <div id="frontendPopover" popover>
+                            <h4>Frontend Technologies</h4>
+                            <ul>
+                                <li>HTML5 & Semantic Markup</li>
+                                <li>CSS3/SASS/SCSS</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>Responsive Design</li>
+                                <li>Web Accessibility (WCAG)</li>
+                                <li>Version Control (Git)</li>
+                                <li>Performance Optimization</li>
+                            </ul>
+                            <button popovertarget="frontendPopover" class="popover__close">Close</button>
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3 class="skill__card__title">Backend Development</h3>
+                        <button popovertarget="backendPopover" class="skill__card__button">Learn more</button>
+                        <div id="backendPopover" popover>
+                            <h4>Backend Technologies</h4>
+                            <ul>
+                                <li>Node.js & Express</li>
+                                <li>PHP & Laravel</li>
+                                <li>MySQL </li>
+                                <li>RESTful API Design</li>
+                                <li>Database Design</li>
+                                <li>Server Management</li>
+                            </ul>
+                            <button popovertarget="backendPopover" class="popover__close">Close</button>
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3 class="skill__card__title">various development tools</h3>
+                        <button popovertarget="toolsPopover" class="skill__card__button">Learn more</button>
+                        <div id="toolsPopover" popover>
+                            <h4>Tools & Environments</h4>
+                            <ul>
+                                <li>VSCode</li>
+                                <li>GitHub</li>
+                                <li>Docker</li>
+                                <li>npm</li>
+                                <li>Webpack</li>
+                                <li>Chrome DevTools</li>
+                                <li>Postman</li>
+                                <li>Command Line</li>
+                            </ul>
+                            <button popovertarget="toolsPopover" class="popover__close">Close</button>
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3 class="skill__card__title">Soft Skills Development</h3>
+                        <button popovertarget="softSkillsPopover" class="skill__card__button">Learn more</button>
+                        <div id="softSkillsPopover" popover>
+                            <h4>Professional Skills</h4>
+                            <ul>
+                                <li>Problem Solving</li>
+                                <li>Team Collaboration</li>
+                                <li>Project Management</li>
+                                <li>Communication</li>
+                                <li>Time Management</li>
+                                <li>Adaptability</li>
+                                <li>Attention to Detail</li>
+                                <li>Continuous Learning</li>
+                            </ul>
+                            <button popovertarget="softSkillsPopover" class="popover__close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="timeline__header">
+            <h1 class="timeline__title">Timeline</h1>
+        </div>
+
+        <section id="timeline" class="timeline">
+            <div class="timeline__line"></div>
+            <article class="timeline__item">
+                <button class="timeline__marker" data-dialog-id="dialog1"
+                    aria-label="Toon details voor eerste gebeurtenis">
+                    <div class="timeline__popover">
+                        <h4 class="timeline__popover-title">Klik voor details</h4>
+                        <p class="timeline__popover-text">Klik om meer informatie over deze gebeurtenis te bekijken</p>
+                    </div>
+                </button>
+                <div class="timeline__content">
+                    <h2 class="timeline__title">Buitenlandse stage</h2>
+                    <p class="timeline__text">
+                        Buitenlandse stage Malta.
+                    </p>
+                    <time class="timeline__date">17 maart 2024</time>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <button class="timeline__marker" data-dialog-id="dialog2"
+                    aria-label="Toon details voor tweede gebeurtenis">
+                    <div class="timeline__popover">
+                        <h4 class="timeline__popover-title">Klik voor details</h4>
+                        <p class="timeline__popover-text">Klik om meer informatie</p>
+                    </div>
+                </button>
+                <div class="timeline__content">
+                    <h2 class="timeline__title">Einde buitenlandse stage</h2>
+                    <p class="timeline__text">
+                        Het einde van een mooie buitenlandse stage in Malta. Deze heeft 2 weken geduurd
+                    </p>
+                    <time class="timeline__date">31 Maart 2024 </time>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <button class="timeline__marker" data-dialog-id="dialog3"
+                    aria-label="Toon details voor derde gebeurtenis">
+                    <div class="timeline__popover">
+                        <h4 class="timeline__popover-title">Klik voor details</h4>
+                        <p class="timeline__popover-text">Klik om meer informatie</p>
+                    </div>
+                </button>
+                <div class="timeline__content">
+                    <h2 class="timeline__title">Diploma informaticabeheer</h2>
+                    <p class="timeline__text">
+                        Op deze datum behaalde ik mijn diploma in informaticabeheer aan de middelbare school.
+                    </p>
+                    <time class="timeline__date">ergens in juni 2024</time>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <button class="timeline__marker" data-dialog-id="dialog4"
+                    aria-label="Toon details voor vierde gebeurtenis">
+                    <div class="timeline__popover">
+                        <h4 class="timeline__popover-title">Klik voor details</h4>
+                        <p class="timeline__popover-text">Klik om meer informatie</p>
+                    </div>
+                </button>
+                <div class="timeline__content">
+                    <h2 class="timeline__title">Start graduaat programmeren</h2>
+                    <p class="timeline__text">
+                        op deze datum starte ik mijn nieuwe studie richting "graduaat programmeren" aan Artevelde
+                        hogeschool in Gent.
+                    </p>
+                    <time class="timeline__date">ergens midden september</time>
+                </div>
+            </article>
+        </section>
+
+        <dialog class="dialog" id="dialog1">
+            <div class="dialog__content">
+                <button class="dialog__close" aria-label="Sluit dialoog">&times;</button>
+                <h2 class="dialog__title">Stage Malta</h2>
+                <div class="dialog__body">
+                    <p>Dit was een stage in Malta, waar ik veel heb geleerd over webontwikkeling en
+                        programmeren. Het was een geweldige ervaring die mijn vaardigheden heeft verbeterd. Dit duurde 2
+                        weken</p>
+                    </p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog class="dialog" id="dialog2">
+            <div class="dialog__content">
+                <button class="dialog__close" aria-label="Sluit dialoog">&times;</button>
+                <h2 class="dialog__title">Einde stage Malta</h2>
+                <div class="dialog__body">
+                    <p>Dit was het einde van een prachtige 2 weken stage in Malta</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog class="dialog" id="dialog3">
+            <div class="dialog__content">
+                <button class="dialog__close" aria-label="Sluit dialoog">&times;</button>
+                <h2 class="dialog__title">Diploma secundair onderwijs</h2>
+                <div class="dialog__body">
+                    <p>Na 6 jaar op het KTA in Dendermonde te hebben gezeten had ik mijn diploma gehaald</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog class="dialog" id="dialog4">
+            <div class="dialog__content">
+                <button class="dialog__close" aria-label="Sluit dialoog">&times;</button>
+                <h2 class="dialog__title">Graduaat programmeren</h2>
+                <div class="dialog__body">
+                    <p>Op deze datum startte ik mijn nieuwe studie genaamd "graduaat programmeren" in
+                        Arteveldehogeschool in Gent</p>
+                </div>
+            </div>
+        </dialog>
+    </main>
+
+    <script src="./build/main.js" type="module"></script>
+</body>
+
+</html>

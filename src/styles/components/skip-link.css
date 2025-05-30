@@ -1,0 +1,28 @@
+.skip-to-content-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: black;
+    padding: var(--space-4);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    text-decoration: none;
+    font-weight: 500;
+    
+    top: -100%;
+    opacity: 0;
+    transition: top 0.3s, opacity 0.3s;
+    z-index: 100;
+
+    &:focus {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@starting-style {
+    .skip-to-content-link:focus {
+        top: -100%;
+        opacity: 0;
+    }
+}

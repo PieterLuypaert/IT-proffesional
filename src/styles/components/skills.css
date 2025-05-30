@@ -1,0 +1,119 @@
+.skills {
+    padding: 2rem 0;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: var(--color-primary);
+    }
+
+    &__grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.container {
+    container-type: inline-size;
+    container-name: skills;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.skill__card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &__title {
+        color: #333;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+    }
+
+    &__button {
+        background: var(--color-primary);
+        color: #333;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        justify-self: start;
+
+        &:hover {
+            background: var(--color-primary);
+        }
+    }
+}
+
+[popover] {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 90vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & h4 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    & ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    & li {
+        margin-bottom: 0.5rem;
+        color: #666;
+    }
+}
+
+.popover__close {
+    margin-top: 1rem;
+    background: var(--color-primary);
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+@container skills (max-width: 900px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@container skills (max-width: 600px) {
+    .skills__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@container skills (min-width: 1200px) {
+    .skills__title {
+        font-size: 2.5rem;
+    }
+
+    .skill__card__title {
+        font-size: 1.5rem;
+    }
+}

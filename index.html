@@ -1,0 +1,68 @@
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio van Pieter Luypaert - Frontend Developer">
+    <title>Portfolio | Pieter Luypaert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/main.css">
+    <link rel="stylesheet" href="/src/styles/base/back.css">
+</head>
+<body>
+    <a class="skip-to-content-link" href="#hero">
+        Skip to content
+      </a>
+      <div class="background-lines">
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <a href="/" class="nav__logo">PL</a>
+                <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                    <span class="nav__toggle-icon"></span>
+                </button>
+                <ul id="menu" class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link nav__link--active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/contact.html" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/projects.html" class="nav__link">Projects</a>
+                    </li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__firstname">Pieter Luypaert</span>
+                </h1>
+                <p class="hero__text">Frontend Developer based in Belgium.</p>
+                <div class="hero__actions">
+                    <a href="/projects.html" class="button button--primary">View Projects</a>
+                    <a href="/contact.html" class="button button--secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="alert" role="alert" aria-live="polite" hidden>
+        <div class="alert__content">
+            <p class="alert__message">Welkom op mijn portfolio</p>
+            <button class="alert__close" aria-label="Close alert">×</button>
+        </div>
+    </div>
+    <script src="./build/main.js" type="module"></script>
+</body>
+</html>

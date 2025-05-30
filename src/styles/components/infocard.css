@@ -1,0 +1,39 @@
+.info-card {
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-text-light);
+
+    &__title {
+        color: var(--color-primary);
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-6);
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        gap: var(--space-4);
+    }
+
+    &__item {
+        display: grid;
+        gap: var(--space-2);
+    }
+
+    &__label {
+        color: var(--color-text-light);
+        font-size: var(--font-size-sm);
+    }
+
+    &__text,
+    &__link {
+        color: var(--color-text);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}

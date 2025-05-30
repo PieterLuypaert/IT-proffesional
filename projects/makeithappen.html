@@ -1,0 +1,82 @@
+<docktype html>
+    <html lang="nl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio van Pieter Luypaert - Frontend Developer">
+        <title>Portfolio | Pieter Luypaert</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../build/main.css">
+        <link rel="stylesheet" href="../src/styles/base/base.css">
+    </head>
+
+    <body>
+        <a class="skip-to-content-link" href="#projects">
+            Skip to content
+        </a>
+        <div class="background-lines">
+        </div>
+        <header class="site-header">
+            <div class="container">
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="/" class="nav__logo">PL</a>
+                    <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                        <span class="nav__toggle-icon"></span>
+                    </button>
+                    <ul id="menu" class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link nav__link--active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/about.html" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/contact.html" class="nav__link">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/projects.html" class="nav__link">Projects</a>
+                        </li>
+                    </ul>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle__icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="project__detail" id="projects">
+            <div class="container">
+                <h1 class="project__detail__title">Make It Happen</h1>
+                
+                <section class="project__detail__content">
+                    <div class="project__detail__description">
+                        <p>Make It Happen is a task management application that helps users organize their daily activities and achieve their goals. The project features a clean, intuitive interface with drag-and-drop functionality for task management.</p>
+                        
+                        <h2>Tools & Technologies</h2>
+                        <ul class="project__detail__tools">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+
+                    <div class="project__detail__gallery">
+                        <figure class="project__detail__figure">
+                            <img src="/src/images/makeithappen.webp" alt="Make It Happen desktop view" class="project--detail__image">
+                            <figcaption>Home</figcaption>
+                        </figure>
+                        <figure class="project__detail__figure">
+                            <img src="/src/images/makeithappen.webp" alt="Make It Happen mobile view" class="project--detail__image">
+                            <figcaption>Login</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script src="../build/main.js" type="module"></script>
+    </body>
+
+    </html>
