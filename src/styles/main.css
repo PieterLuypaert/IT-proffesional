@@ -15,3 +15,7 @@
 @import 'components/details.css';
 @import 'components/alert.css';
 
+/* Import all component styles */
+@import './components/about.css';
+/* Add other component imports here */
+

@@ -1,22 +1,22 @@
 name: Build and Deploy
 on:
   push:
-    branches: [ main ]  # Triggert bij elke push naar main branch
+    branches: [main] # Triggert bij elke push naar main branch
 jobs:
   build:
-    runs-on: ubuntu-latest  # Gebruikt Ubuntu server
+    runs-on: ubuntu-latest # Gebruikt Ubuntu server
     steps:
-    - uses: actions/checkout@v2  # Download je code
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16'  # Installeert Node.js
-    - name: Install dependencies
-      run: npm install  # Installeert laravel-mix en postcss-nested
-    - name: Build
-      run: npm run production  # Voert webpack.mix.js uit
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build  # Publiceert build folder naar gh-pages branch
+      - uses: actions/checkout@v2 # Download je code
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16" # Installeert Node.js
+      - name: Install dependencies
+        run: npm install # Installeert laravel-mix en postcss-nested
+      - name: Build
+        run: npm run production # Voert webpack.mix.js uit
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build # Publiceert build folder naar gh-pages branch
